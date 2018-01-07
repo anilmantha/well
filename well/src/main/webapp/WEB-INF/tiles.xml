@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/common/common_layout/common_layout.jsp">
+		<put-attribute name="header" value="/common/common_header.jsp" />
+		<put-attribute name="left_bar" value="/common/common_left_bar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/common/common_footer.jsp" />
+	</definition>
+	<definition name="home" extends="base.definition">
+		<put-attribute name="body" value="/pages/home.jsp" />
+	</definition>
+	<definition name="registration" extends="base.definition">
+		<put-attribute name="body" value="/pages/registration.jsp" />
+	</definition>
+	<definition name="stock-adjustment" extends="base.definition">
+		<put-attribute name="body" value="/pages/stock-adjustment.jsp" />
+	</definition>
+	<definition name="stock-lists" extends="base.definition">
+		<put-attribute name="body" value="/pages/stock-lists.jsp" />
+	</definition>
+
+	<definition name="addnewstock" extends="base.definition">
+		<put-attribute name="body" value="/pages/addnewstock.jsp" />
+	</definition>
+
+	<definition name="stockreceipt" extends="base.definition">
+		<put-attribute name="body" value="/pages/stockreceipt.jsp" />
+	</definition>
+	<definition name="booking-selection" extends="base.definition">
+		<put-attribute name="body" value="/pages/booking-selection.jsp" />
+	</definition>
+	<definition name="appointment" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointment.jsp" />
+	</definition>
+
+	<definition name="registration" extends="base.definition">
+		<put-attribute name="body" value="/pages/registration.jsp" />
+	</definition>
+	<definition name="search" extends="base.definition">
+		<put-attribute name="body" value="/pages/search.jsp" />
+	</definition>
+	<definition name="sorry" extends="base.definition">
+		<put-attribute name="body" value="/pages/sorry.jsp" />
+	</definition>
+
+	<definition name="doctoradvicelist" extends="base.definition">
+			<put-attribute name="body" value="/pages/doctoradvicelist.jsp" />
+	</definition>
+
+	<definition name="supplier" extends="base.definition">
+		<put-attribute name="body" value="/pages/supplier.jsp" />
+	</definition>
+
+	<definition name="doctoradvice" extends="base.definition">
+			<put-attribute name="body" value="/pages/doctoradvice.jsp" />
+	</definition>
+	<definition name="supplierlist" extends="base.definition">
+			<put-attribute name="body" value="/pages/supplierlist.jsp" />
+	</definition>
+	<definition name="manufacturer" extends="base.definition">
+			<put-attribute name="body" value="/pages/manufacturer.jsp" />
+	</definition>
+	
+	 <definition name="stockdetailsmodifications" extends="base.definition">
+			<put-attribute name="body" value="/pages/stockdetailsmodifications.jsp" />
+		</definition>
+	<definition name="servicestocknewpage" extends="base.definition">
+		<put-attribute name="body" value="/pages/servicestocknewpage.jsp" />
+	</definition>
+	<definition name="servicestocklist" extends="base.definition">
+		<put-attribute name="body" value="/pages/servicestocklist.jsp" />
+	</definition>
+	<definition name="manufacturerlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/manufacturerlist.jsp" />
+	</definition>
+	<definition name="appointmentcancelreason" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointmentcancelreason.jsp" />
+	</definition>
+    <definition name="appointmentslist" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointmentslist.jsp" />
+	</definition>
+	<definition name="billingsettlement" extends="base.definition">
+		<put-attribute name="body" value="/pages/billingsettlement.jsp" />
+	</definition>
+	<definition name="paymentsettlementlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/paymentsettlementlist.jsp" />
+	</definition>
+	<definition name="serviceratemaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/serviceratemaster.jsp" />
+	</definition>
+	<definition name="taxmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/taxmaster.jsp" />
+	</definition>
+	<definition name="suppliersmodifications" extends="base.definition">
+			<put-attribute name="body" value="/pages/suppliersmodifications.jsp" />
+	</definition>
+	<definition name="manufacturermodifications" extends="base.definition">
+			<put-attribute name="body" value="/pages/manufacturermodifications.jsp" />
+	</definition>
+	<definition name="taxstructuremaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/taxstructuremaster.jsp" />
+	</definition>
+	<definition name="productratemaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/productratemaster.jsp" />
+	</definition>
+	<definition name="appointmentslist" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointmentslist.jsp" />
+	</definition>
+	<definition name="appointmentservice" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointmentservice.jsp" />
+	</definition>
+	<definition name="appointmentscompletedlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/appointmentscompletedlist.jsp" />
+	</definition>
+	<definition name="servicemaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/servicemaster.jsp" />
+	</definition>
+	<definition name="servicegroupmaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/servicegroupmaster.jsp" />
+	</definition>
+	<definition name="billsbybilldate" extends="base.definition">
+		<put-attribute name="body" value="/pages/billsbybilldate.jsp" />
+	</definition>
+	<definition name="manualcomplaint" extends="base.definition">
+		<put-attribute name="body" value="/pages/guestmanualcomplaint.jsp" />
+	</definition>
+<definition name="CustomerFeedbackForm" extends="base.definition">
+			<put-attribute name="body" value="/pages/CustomerFeedbackForm.jsp" />
+	</definition> 
+     <definition name="Feedback" extends="base.definition">
+			<put-attribute name="body" value="/pages/Feedback.jsp" />
+	</definition>
+	<definition name="Tickets" extends="base.definition"> <put-attribute 
+		name="body" value="/pages/Tickets.jsp" /> </definition> 
+	<definition name="openticketnopage" extends="base.definition">
+		<put-attribute name="body" value="/pages/openticketnopage.jsp" />
+	</definition>
+	<definition name="TicketDashboard" extends="base.definition">
+		<put-attribute name="body" value="/pages/TicketDashboard.jsp" />
+	</definition>
+
+	<definition name="TicketReviewReport" extends="base.definition"> <put-attribute 
+		name="body" value="/pages/TicketReviewReport.jsp" />
+    </definition>
+    
+	<definition name="ticketclosing" extends="base.definition">
+			<put-attribute name="body" value="/pages/ticketclosing.jsp" />
+	</definition>
+	<definition name="Feedbackreviewform" extends="base.definition">
+		<put-attribute name="body" value="/pages/Feedbackreviewform.jsp" />
+	</definition>
+			<definition name="employeeRoster" extends="base.definition">
+			<put-attribute name="body" value="/pages/employeeRoster.jsp" />
+	</definition>
+	
+	<definition name="createroster" extends="base.definition">
+			<put-attribute name="body" value="/pages/createroster.jsp" />
+	</definition>
+	<definition name="membershipmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/membershipmaster.jsp" />
+	</definition>
+	<definition name="corporatemaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/corporatemaster.jsp" />
+	</definition>
+	
+	<definition name="DOBSearch" extends="base.definition">
+			<put-attribute name="body" value="/pages/DOBSearch.jsp" />
+	</definition>
+	<definition name="departmentmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/departmentmaster.jsp" />
+	</definition>
+	<definition name="updatedepartment" extends="base.definition">
+			<put-attribute name="body" value="/pages/updatedepartment.jsp" />
+	</definition>
+	
+	<definition name="staffskills" extends="base.definition">
+			<put-attribute name="body" value="/pages/staffskills.jsp" />
+	</definition>
+	<definition name="skillmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/skillmaster.jsp" />
+	</definition>
+	<definition name="updateskills" extends="base.definition">
+			<put-attribute name="body" value="/pages/updateskills.jsp" />
+	</definition>
+	<definition name="qualificationmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/qualificationmaster.jsp" />
+	</definition>
+	<definition name="marketingvoucher" extends="base.definition">
+			<put-attribute name="body" value="/pages/marketingvoucher.jsp" />
+	</definition>
+	<definition name="roommaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/roommaster.jsp" />
+	</definition>
+	<definition name="segmentmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/segmentmaster.jsp" />
+	</definition>
+	<definition name="servicestaff" extends="base.definition">
+			<put-attribute name="body" value="/pages/servicestaff.jsp" />
+	</definition>
+	<definition name="employeeRoster" extends="base.definition">
+			<put-attribute name="body" value="/pages/employeeRoster.jsp" />
+	</definition>
+	
+	<definition name="createroster" extends="base.definition">
+			<put-attribute name="body" value="/pages/createroster.jsp" />
+	</definition>
+	<definition name="membershipmaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/membershipmaster.jsp" />
+	</definition>
+	<definition name="corporatemaster" extends="base.definition">
+			<put-attribute name="body" value="/pages/corporatemaster.jsp" />
+	</definition>
+	<definition name="packagemaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/packagemaster.jsp" />
+	</definition>
+	<definition name="packagemastermodification" extends="base.definition">
+		<put-attribute name="body" value="/pages/packagemastermodification.jsp" />
+	</definition>
+	<definition name="stockgroupmaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/stockgroupmaster.jsp" />
+	</definition>
+	<definition name="stocksubgroupmaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/stocksubgroupmaster.jsp" />
+	</definition>
+	<definition name="billinginstructionmaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/billinginstructionmaster.jsp" />
+	</definition>
+	<definition name="businesssourcemaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/businesssourcemaster.jsp" />
+	</definition>
+	<definition name="giftvouchermaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/giftvouchermaster.jsp" />
+	</definition>
+	<definition name="creditlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/creditlist.jsp" />
+	</definition>
+	<definition name="staffmaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/staffmaster.jsp" />
+	</definition>
+	<definition name="packageratemaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/packageratemaster.jsp" />
+	</definition>
+	<definition name="serviceroommaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/serviceroommaster.jsp" />
+	</definition>
+	<definition name="corporatetypemaster" extends="base.definition">
+		<put-attribute name="body" value="/pages/corporatetypemaster.jsp" />
+	</definition>
+	<definition name="stafflist" extends="base.definition">
+		<put-attribute name="body" value="/pages/stafflist.jsp" />
+	</definition>
+	<definition name="DOBSearch" extends="base.definition">
+		<put-attribute name="body" value="/pages/DOBSearch.jsp" />
+	</definition>
+	<definition name="weddingSearch" extends="base.definition">
+		<put-attribute name="body" value="/pages/weddingSearch.jsp" />
+	</definition>
+	<definition name="settlementlistreport" extends="base.definition">
+		<put-attribute name="body" value="/pages/settlementlistreport.jsp" />
+	</definition>
+	<definition name="stockreorderlevellist" extends="base.definition">
+		<put-attribute name="body" value="/pages/stockreorderlevellist.jsp" />
+	</definition>
+	<definition name="inventorylist" extends="base.definition">
+		<put-attribute name="body" value="/pages/inventorylist.jsp" />
+	</definition>
+	<definition name="stockwarninglevellist" extends="base.definition">
+		<put-attribute name="body" value="/pages/stockwarninglevellist.jsp" />
+	</definition>
+	<definition name="therapisttransactionlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/therapisttransactionlist.jsp" />
+	</definition>
+	<definition name="Feedbackformlistbydate" extends="base.definition">
+		<put-attribute name="body" value="/pages/Feedbackformlistbydate.jsp" />
+	</definition>
+	<definition name="guestServiceSearch" extends="base.definition">
+		<put-attribute name="body" value="/pages/guestServiceSearch.jsp" />
+	</definition>
+	<definition name="guestemailist" extends="base.definition">
+		<put-attribute name="body" value="/pages/guestemailist.jsp" />
+	</definition>
+	<definition name="paymentlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/paymentlist.jsp" />
+	</definition>
+	<definition name="productlist" extends="base.definition">
+		<put-attribute name="body" value="/pages/productlist.jsp" />
+	</definition>
+	<definition name="MyView" extends="base.definition">
+		<put-attribute name="body" value="/pages/MyView.jsp" />
+	</definition>
+</tiles-definitions>

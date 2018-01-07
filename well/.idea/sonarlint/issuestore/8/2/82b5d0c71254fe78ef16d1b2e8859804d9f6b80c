@@ -1,0 +1,49 @@
+
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŒÙõÙ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(Äë³@
+esquid:S1192"QDefine a constant instead of duplicating this literal "appointmentslist" 4 times.(İ¯‰F
+osquid:S3923"[Remove this conditional structure or edit its code blocks so that they're not all the same.(ÓŞ=
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÍ£
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç²¡­
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘Ôş
+~squid:S1488"iImmediately return this expression instead of assigning it to the temporary variable "stockAvailability".(Êë›š
+wsquid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "resultTime".(üÑ¥ƒ
+xsquid:S1488"cImmediately return this expression instead of assigning it to the temporary variable "serviceList".(ÇóÚˆ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¶–ùÿÿÿÿ
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ëó¡ı
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(îû¶"
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(èş…±ùÿÿÿÿ
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(‚è‡éÿÿÿÿÿ
+|squid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "resultTime".(°ÒÖáÿÿÿÿÿ
+Ysquid:S1854"?Remove this useless assignment to local variable "totalAmount".(ß§”Çüÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(æè€á
+;squid:S1452"&Remove usage of generic wildcard type.(Øã†¦
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¸îÂúÿÿÿÿ
+csquid:S1192"NDefine a constant instead of duplicating this literal "appointmentId" 3 times.( ŞŒª
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(°Ô¥Àúÿÿÿÿ
+Xsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(Ïìèßÿÿÿÿÿ
+msquid:UselessImportCheck"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ÿœà
+ssquid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "message".(ØÁ<
+Ssquid:S1854"9Remove this useless assignment to local variable "total".(Ş¯Ùüÿÿÿÿ
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç²¡­
+xsquid:S1488"dImmediately return this expression instead of assigning it to the temporary variable "packagesList".(†™Z
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(èş…±ùÿÿÿÿ
+~squid:S1488"dImmediately return this expression instead of assigning it to the temporary variable "packagesList".(Ûº±İÿÿÿÿÿ
+tsquid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "message".(µ‘‚
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇŒ¢àşÿÿÿÿ
+Jsquid:S1481"5Remove this unused "stockDeatilsList" local variable.(…ÈĞÆ
+Ysquid:S1854"DRemove this useless assignment to local variable "stockDeatilsList".(…ÈĞÆ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¬¯
+_squid:S1192"JDefine a constant instead of duplicating this literal "serviceId" 3 times.(²çû…
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı­Î‘
+Xsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(Ïìèßÿÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(üìäï
+Usquid:S1854"@Remove this useless assignment to local variable "producttotal".(·äş„

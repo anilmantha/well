@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="inventoryreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="822b8a23-3758-4b60-817e-beb5b6b4ad63">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="StockName" class="java.lang.String"/>
+	<field name="ServiceName" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="stockname" class="java.lang.String"/>
+	<field name="servicename" class="java.lang.String"/>
+	<field name="quantity" class="java.math.BigDecimal"/>
+	<field name="processdate" class="java.lang.String"/>
+	<field name="billno" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="221" y="22" width="100" height="20" uuid="4f43d35c-46cb-4347-8325-f6b7020c6601"/>
+				<text><![CDATA[Inventory Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="9" y="59" width="534" height="1" uuid="fbcbea46-decd-4762-80e3-a31a004085c8"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="0" width="100" height="20" uuid="9c5b8b2b-b600-4aab-bbde-b41cc1f34fc4"/>
+				<text><![CDATA[Stock Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="100" height="20" uuid="5dd88deb-1ce7-46d2-844d-a96f89f9880b"/>
+				<text><![CDATA[Service Name]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="113" y="0" width="121" height="20" isRemoveLineWhenBlank="true" uuid="c82b141f-856a-4b2d-9276-2182e5cc8871"/>
+				<textFieldExpression><![CDATA[$F{StockName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="0" width="161" height="20" isRemoveLineWhenBlank="true" uuid="2824f66a-770f-42e1-a2c1-6ca08c98af57"/>
+				<textFieldExpression><![CDATA[$F{ServiceName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="0" width="47" height="20" uuid="7a2227b5-cb3b-479b-9220-6a4cc54eae45"/>
+				<text><![CDATA[Stock ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="0" width="100" height="20" uuid="0dc72932-1dee-4f5d-8f8c-74a5231960b7"/>
+				<text><![CDATA[Stock Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="0" width="100" height="20" uuid="cfb9ef54-de01-4335-835b-13593fe913f4"/>
+				<text><![CDATA[Service Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="0" width="75" height="20" uuid="708ab154-dfb5-4030-adca-bd7d2480c936"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="0" width="75" height="20" uuid="211b2264-1dc5-4c9d-a3e3-70761bf00d65"/>
+				<text><![CDATA[Process Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="0" width="75" height="20" uuid="ec0a6093-742f-46d1-95f5-f758be497862"/>
+				<text><![CDATA[Bill No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="0" width="47" height="20" isRemoveLineWhenBlank="true" uuid="e6cdb26b-a860-4a9c-85da-d66b9682c019"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="0" width="100" height="20" isRemoveLineWhenBlank="true" uuid="226760d4-cbff-40d4-8b48-e32948753fe9"/>
+				<textFieldExpression><![CDATA[$F{stockname}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="154" y="0" width="100" height="20" isRemoveLineWhenBlank="true" uuid="0fe66032-ab87-49ef-af96-c9a1e6fabffc"/>
+				<textFieldExpression><![CDATA[$F{servicename}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="255" y="0" width="75" height="20" isRemoveLineWhenBlank="true" uuid="68a7e548-3707-4dc7-8ac5-95a16694ea26"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="331" y="0" width="75" height="20" isRemoveLineWhenBlank="true" uuid="e362b00d-8758-4fc5-9159-a06fe68a8bcf"/>
+				<textFieldExpression><![CDATA[$F{processdate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="407" y="0" width="75" height="20" isRemoveLineWhenBlank="true" uuid="5a7fff39-227a-4d14-a306-67041fd1ab3d"/>
+				<textFieldExpression><![CDATA[$F{billno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

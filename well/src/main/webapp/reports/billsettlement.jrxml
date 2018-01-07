@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="billsettlement" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="b69b3fa5-27ad-430a-ad21-ee0aca49f2c2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="34"/>
+	<field name="fromdate" class="java.lang.String"/>
+	<field name="todate" class="java.lang.String"/>
+	<field name="searchpaymode" class="java.lang.String"/>
+	<field name="billno" class="java.lang.Integer"/>
+	<field name="amount" class="java.math.BigDecimal"/>
+	<field name="billdate" class="java.lang.String"/>
+	<field name="paymode" class="java.lang.String"/>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="settleamount" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="175" y="11" width="169" height="32" uuid="60ffc09e-050d-401d-a82f-db094cb2bd3e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Settlement Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="43" width="555" height="1" uuid="fbba2b99-4ee8-44fd-b961-f3e65538f27d"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="86" height="20" uuid="6d120d14-6e1b-4379-aedb-eb92914393fc"/>
+				<text><![CDATA[From Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="86" height="20" uuid="dc9e0e61-8930-4e89-9071-eccdc4a9073f"/>
+				<text><![CDATA[To Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="86" height="20" uuid="8650d25b-dcc5-4c87-a99a-79f720b619b3"/>
+				<text><![CDATA[Paymode:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="86" y="0" width="89" height="20" isRemoveLineWhenBlank="true" uuid="bf67fbd9-ac1d-4027-9206-f5e81653155a"/>
+				<textFieldExpression><![CDATA[$F{fromdate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="86" y="20" width="89" height="20" isRemoveLineWhenBlank="true" uuid="30912b78-7093-4611-9d0e-6006794c4261"/>
+				<textFieldExpression><![CDATA[$F{todate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="86" y="40" width="89" height="20" isRemoveLineWhenBlank="true" uuid="7c7a0bcb-678a-4751-bbe5-024f59d3e207"/>
+				<textFieldExpression><![CDATA[$F{searchpaymode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="86" height="20" uuid="37bc6d55-11aa-48ba-9883-d2f22724a898"/>
+				<text><![CDATA[Bill No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="0" width="89" height="20" uuid="490368b2-da8e-4ca1-9c74-2a61015dcd55"/>
+				<text><![CDATA[Bill Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="0" width="78" height="20" uuid="0d0afb3d-22a4-40c9-859d-c1e5e477f95f"/>
+				<text><![CDATA[Billed Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="0" width="91" height="20" uuid="73133c5c-2a5b-49ee-a53d-b45407fe5f06"/>
+				<text><![CDATA[Paymode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="0" width="107" height="20" uuid="910f2fe8-1568-4ba5-b977-8356aebaa33f"/>
+				<text><![CDATA[Settled Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="451" y="0" width="104" height="20" uuid="ef3aa9e7-9638-414c-b1fd-20735cbed908"/>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="86" height="20" isRemoveLineWhenBlank="true" uuid="f0b98707-7ac3-477c-aab2-5a0d44cc22df"/>
+				<textFieldExpression><![CDATA[$F{billno}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="86" y="0" width="89" height="20" isRemoveLineWhenBlank="true" uuid="ebaab8fe-9e84-437e-9a07-7f2addc150f3"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="253" y="0" width="91" height="20" isRemoveLineWhenBlank="true" uuid="60446a3f-3a96-482a-bfef-cb63fdb13022"/>
+				<textFieldExpression><![CDATA[$F{paymode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="344" y="0" width="107" height="20" isRemoveLineWhenBlank="true" uuid="4aeb9221-9ed7-41c1-94e5-30f30398e180"/>
+				<textFieldExpression><![CDATA[$F{settleamount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="451" y="0" width="104" height="20" isRemoveLineWhenBlank="true" uuid="4ec98a9f-556e-48b2-a618-6ee367854549"/>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="175" y="0" width="78" height="20" isRemoveLineWhenBlank="true" uuid="62b1ddfa-3d9b-407b-9cc7-3a193e3d323e"/>
+				<textFieldExpression><![CDATA[$F{billdate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

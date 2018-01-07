@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentreport" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4878756a-f3eb-4b00-ad4d-74a7bf45a3a9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="151"/>
+	<property name="ireport.y" value="35"/>
+	<field name="fromdate" class="java.lang.String"/>
+	<field name="todate" class="java.lang.String"/>
+	<field name="servicename" class="java.lang.String"/>
+	<field name="paymentmode" class="java.lang.String"/>
+	<field name="billno" class="java.lang.String"/>
+	<field name="billdate" class="java.lang.String"/>
+	<field name="guestname" class="java.lang.String"/>
+	<field name="staffname" class="java.lang.String"/>
+	<field name="servicename1" class="java.lang.String"/>
+	<field name="packagename" class="java.lang.String"/>
+	<field name="roomno" class="java.lang.String"/>
+	<field name="paymentmode1" class="java.lang.String"/>
+	<field name="giftvoucherid" class="java.lang.String"/>
+	<field name="discount" class="java.lang.String"/>
+	<field name="totalamount" class="java.lang.String"/>
+	<field name="amountowing" class="java.lang.String"/>
+	<field name="paidamount" class="java.lang.String"/>
+	<field name="paymentdate" class="java.lang.String"/>
+	<field name="cardno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="342" y="27" width="131" height="20" uuid="067ff4c7-90a9-4bc1-b3c7-db05c844dd28"/>
+				<text><![CDATA[Payment Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="86c72ee1-6135-45e4-bd73-f597bcd5510b"/>
+				<text><![CDATA[From Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="100" height="20" uuid="dc0e7727-c001-4f6b-98c3-85c6fc1537ac"/>
+				<text><![CDATA[To Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="100" height="20" uuid="a5dcdadc-480c-4a84-8a68-9defbeb8f428"/>
+				<text><![CDATA[Service Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="47" width="100" height="20" uuid="ddca0aa7-b986-4c06-8069-2ee2980d0746"/>
+				<text><![CDATA[Payment Mode]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="152" y="0" width="100" height="20" uuid="ab5a08a4-93b4-4691-b888-d34d598c9cda"/>
+				<textFieldExpression><![CDATA[$F{fromdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="47" width="100" height="20" uuid="ee0f9311-a526-4591-9500-7d0b7a558251"/>
+				<textFieldExpression><![CDATA[$F{servicename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="0" width="100" height="20" uuid="373a9bad-7f9d-4325-99e9-3a7d41464810"/>
+				<textFieldExpression><![CDATA[$F{todate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="47" width="100" height="20" uuid="a44c4ce4-5bc7-484d-9d1b-26542cbb277f"/>
+				<textFieldExpression><![CDATA[$F{paymentmode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="47" height="20" uuid="461ba275-3d2c-4bf2-8cda-baf136d019b4"/>
+				<text><![CDATA[Bill NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="0" width="53" height="20" uuid="4c282c05-4670-45dc-b1be-d8d796139f99"/>
+				<text><![CDATA[Billl Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="52" height="20" uuid="e4493c0f-da2c-46e8-a71c-848c4cc57042"/>
+				<text><![CDATA[Guest Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="0" width="52" height="20" uuid="e50a0909-b2eb-4f88-a844-ea9e4a177076"/>
+				<text><![CDATA[Staff Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="0" width="52" height="20" uuid="65de2ec1-def2-4de2-8a5b-92527a80d2fa"/>
+				<text><![CDATA[Service Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="0" width="52" height="20" uuid="fd0ad36d-dcf9-4d9b-8dc0-f427c899ffe0"/>
+				<text><![CDATA[Package Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="0" width="52" height="20" uuid="0f4be362-d306-4421-b184-7671832dff5f"/>
+				<text><![CDATA[Room No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="0" width="52" height="20" uuid="24b98b05-108d-4011-b584-64378d27a63c"/>
+				<text><![CDATA[Payment Mode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="52" height="20" uuid="0227221c-2d3a-48ac-b98c-5071e22a0cf4"/>
+				<text><![CDATA[Gift Voucher Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="0" width="52" height="20" uuid="1130e737-2849-401b-80f0-88654b33230d"/>
+				<text><![CDATA[Discount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="0" width="52" height="20" uuid="40df3e4b-c4db-46c2-aa99-19d96049b215"/>
+				<text><![CDATA[Total amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="583" y="0" width="52" height="20" uuid="4bcfb4e1-0130-4b5f-8267-4562d7e23b4e"/>
+				<text><![CDATA[Amount Owing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="644" y="0" width="47" height="20" uuid="a6b95f1d-f88b-4017-8825-d36e506ed947"/>
+				<text><![CDATA[Paid Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="0" width="47" height="20" uuid="93901d24-f509-4e64-846f-dccc0d3c4643"/>
+				<text><![CDATA[Payment Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="755" y="0" width="47" height="20" uuid="32dbe4ad-81d8-4fa9-8b1b-3e2b0f668782"/>
+				<text><![CDATA[Card No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="47" height="20" uuid="d2f96fc2-d447-4842-8ce1-08eed1748240"/>
+				<textFieldExpression><![CDATA[$F{billno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="47" height="20" uuid="86911e3b-0785-49c1-be3f-e5d348d9debf"/>
+				<textFieldExpression><![CDATA[$F{billdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="0" width="47" height="20" uuid="91bb661d-9213-400f-a708-fa35005bc19f"/>
+				<textFieldExpression><![CDATA[$F{guestname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="47" height="20" uuid="d513d16d-ceb0-4ad7-aae7-53aefcf8f58f"/>
+				<textFieldExpression><![CDATA[$F{staffname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="0" width="47" height="20" uuid="90d933bc-ed92-4a13-8ed5-6163b3ef30df"/>
+				<textFieldExpression><![CDATA[$F{servicename1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="47" height="20" uuid="375a70c8-cbd8-47da-8395-0efeea2b8c8c"/>
+				<textFieldExpression><![CDATA[$F{packagename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="0" width="47" height="20" uuid="986ac3e5-bd8d-4987-8aa2-f846de5d8adf"/>
+				<textFieldExpression><![CDATA[$F{roomno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="47" height="20" uuid="4f97fcd5-7567-450f-a122-678e648bb6a1"/>
+				<textFieldExpression><![CDATA[$F{paymentmode1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="0" width="38" height="20" uuid="d910340c-0600-416e-b4e3-b6a0b0672f63"/>
+				<textFieldExpression><![CDATA[$F{field}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="52" height="20" uuid="25c5f383-254f-41e3-8fa3-4828b97ad9b3"/>
+				<textFieldExpression><![CDATA[$F{giftvoucherid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="469" y="0" width="52" height="20" uuid="777b7f28-ff97-4814-95ff-2c45bd3783fe"/>
+				<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="521" y="0" width="53" height="20" uuid="9127fd51-a075-4853-8636-1ba03063c095"/>
+				<textFieldExpression><![CDATA[$F{totalamount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="583" y="0" width="52" height="20" uuid="a3cf4bed-d63f-4ec2-b999-4bceb63718af"/>
+				<textFieldExpression><![CDATA[$F{amountowing}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="644" y="0" width="47" height="20" uuid="9474cedb-e76f-45df-833e-335ed9f31b1e"/>
+				<textFieldExpression><![CDATA[$F{paidamount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="701" y="0" width="47" height="20" uuid="51b93b9e-bcec-4f61-8ee0-d40c335c2bee"/>
+				<textFieldExpression><![CDATA[$F{paymentdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="755" y="0" width="47" height="20" uuid="a84b9446-f2e9-4a80-a12f-3f46e145a24e"/>
+				<textFieldExpression><![CDATA[$F{cardno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

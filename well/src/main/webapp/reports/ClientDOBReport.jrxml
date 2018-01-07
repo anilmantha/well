@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ClientDOBReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c03f6b48-a232-418c-8cc7-930cd5b7a284">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="CustID" class="java.lang.Integer"/>
+	<field name="Name" class="java.lang.String"/>
+	<field name="DOB" class="java.util.Date"/>
+	<field name="Mobile" class="java.lang.Number"/>
+	<field name="Email" class="java.lang.String"/>
+	<field name="LastVisit" class="java.util.Date"/>
+	<field name="totalVisits" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="18" width="193" height="20" uuid="c9223502-739d-4756-8a95-98f015346815"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Client's Date Of Birth Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="54" width="555" height="1" uuid="de14d870-a88e-4aca-9d1d-4154636a4449"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="7a90a314-2373-4c82-b24b-a3e406d044ec"/>
+				<text><![CDATA[Customer ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="92" height="20" uuid="95e37f96-f4f0-48dd-80fe-bcb6dac4270b"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="0" width="76" height="20" uuid="9486cd43-2fda-45d4-b74f-8bad9240d605"/>
+				<text><![CDATA[DOB	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="0" width="79" height="20" uuid="015803b2-891e-48fb-a609-9d53c7626778"/>
+				<text><![CDATA[Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="0" width="90" height="20" uuid="024e2250-71a6-4185-b44a-a2d23763c41f"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="0" width="78" height="20" uuid="c129fda9-b36a-4089-b63a-275635c09d45"/>
+				<text><![CDATA[Last Visit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="484" y="0" width="71" height="20" uuid="c9179c25-0e92-45a5-bbc7-995a7136df75"/>
+				<text><![CDATA[No.of Visits]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="357d7a66-de89-40f2-bdca-b114b5081673"/>
+				<textFieldExpression><![CDATA[$F{CustID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="0" width="92" height="20" uuid="c41e6637-6029-43f6-bb2e-0dd6380dd421"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="0" width="76" height="20" uuid="e0e5e2e9-c6ae-4124-8906-ccdbfc7d3642"/>
+				<textFieldExpression><![CDATA[$F{DOB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="20" uuid="225399f5-19cc-42b3-8d52-cdac7a0cce6b"/>
+				<textFieldExpression><![CDATA[$F{Mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="90" height="20" uuid="955f8b58-75a2-44d6-ad08-49bf0db9efe8"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="0" width="78" height="20" uuid="28c4690c-e149-47e4-835c-31fed8d836c8"/>
+				<textFieldExpression><![CDATA[$F{LastVisit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="484" y="0" width="71" height="20" uuid="06086e12-aede-4c94-aff3-5601d3808026"/>
+				<textFieldExpression><![CDATA[$F{totalVisits}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

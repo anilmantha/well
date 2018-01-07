@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stockreorderlevel" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="39cdc206-7776-40bf-a456-e4e5347f9867">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="72"/>
+	<field name="stockname" class="java.lang.String"/>
+	<field name="stocktype" class="java.lang.String"/>
+	<field name="stockgroup" class="java.lang.String"/>
+	<field name="stocksubgroup" class="java.lang.String"/>
+	<field name="sno" class="java.lang.Integer"/>
+	<field name="stockname1" class="java.lang.String"/>
+	<field name="stocktype1" class="java.lang.String"/>
+	<field name="currentstock" class="java.math.BigDecimal"/>
+	<field name="reorderlevel" class="java.lang.Integer"/>
+	<field name="stockgroup1" class="java.lang.String"/>
+	<field name="stocksubgroup1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="15" width="145" height="20" uuid="c763fab6-f1b7-404a-b2ea-e67114cebb5e"/>
+				<text><![CDATA[Stock Reorder Level Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="35" width="554" height="2" uuid="d4843dfa-7351-445f-9f96-0e0b60d486e5"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="85" height="20" uuid="30b6df5c-82ea-445f-a579-e2f264677939"/>
+				<text><![CDATA[Stock Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="39" width="84" height="20" uuid="8e62d86e-d949-4412-83b7-3678ec3ec29e"/>
+				<text><![CDATA[Stock SubGroup:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="39" width="70" height="20" uuid="da16bf1a-54d1-486f-b088-99a14ff4420f"/>
+				<text><![CDATA[Stock Group:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="0" width="68" height="20" uuid="cbaea6e5-0bf7-4605-bc29-52d562ea1b7b"/>
+				<text><![CDATA[Stock Type:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="85" y="0" width="78" height="20" isRemoveLineWhenBlank="true" uuid="c14b52a0-4701-422f-8e8b-c805a422d82b"/>
+				<textFieldExpression><![CDATA[$F{stockname}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="233" y="0" width="74" height="20" isRemoveLineWhenBlank="true" uuid="03f1c709-1218-4da4-b02e-f2da9e994a32"/>
+				<textFieldExpression><![CDATA[$F{stocktype}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="233" y="39" width="74" height="20" isRemoveLineWhenBlank="true" uuid="64b7f537-a01a-45d8-ad58-acd9c31f36c8"/>
+				<textFieldExpression><![CDATA[$F{stockgroup}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="85" y="39" width="78" height="20" isRemoveLineWhenBlank="true" uuid="961cd265-0daf-4db0-9bef-8d8f0896f470"/>
+				<textFieldExpression><![CDATA[$F{stocksubgroup}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="84" height="20" uuid="d7149e28-044c-437a-9fc3-96d6b5fdbb9a"/>
+				<text><![CDATA[S.No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="0" width="78" height="20" uuid="e30ce9eb-dd1a-4614-b9c7-aaa396477cea"/>
+				<text><![CDATA[Stock Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="0" width="68" height="20" uuid="91f0e344-d3ec-4ce6-bfc7-9c5b3228ab31"/>
+				<text><![CDATA[Stock Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="0" width="76" height="20" uuid="2a0fac15-0952-4c70-a20a-d4c711e715fa"/>
+				<text><![CDATA[Current Stock]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="0" width="74" height="20" uuid="f2065827-0b31-4add-b9a4-0c41c8db769e"/>
+				<text><![CDATA[Reorder Level]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="0" width="66" height="20" uuid="a9f1aece-828c-4d9c-8d56-f58e278cf22b"/>
+				<text><![CDATA[Stock Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="0" width="107" height="20" uuid="add0f335-2afe-4850-9f15-0f0078867a7d"/>
+				<text><![CDATA[Stock subgroup]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="231" y="0" width="76" height="20" isRemoveLineWhenBlank="true" uuid="ece51fc2-5ca7-45c9-9634-b361d9ef064a"/>
+				<textFieldExpression><![CDATA[$F{currentstock}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="85" y="0" width="78" height="20" isRemoveLineWhenBlank="true" uuid="424b640a-421d-4f87-bd47-14978a0dc54c"/>
+				<textFieldExpression><![CDATA[$F{stockname1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="307" y="0" width="74" height="20" isRemoveLineWhenBlank="true" uuid="beb355e2-ecba-4bb8-b561-5183663c9c6a"/>
+				<textFieldExpression><![CDATA[$F{reorderlevel}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="84" height="20" isRemoveLineWhenBlank="true" uuid="1aed7576-3fab-4148-9921-682fa43c37b9"/>
+				<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="447" y="0" width="107" height="20" isRemoveLineWhenBlank="true" uuid="d36830a8-7df8-414a-a07c-337183ca87d4"/>
+				<textFieldExpression><![CDATA[$F{stocksubgroup1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="381" y="0" width="66" height="20" isRemoveLineWhenBlank="true" uuid="5a675cf0-c960-466f-873f-52e88dd1407e"/>
+				<textFieldExpression><![CDATA[$F{stockgroup1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="163" y="0" width="68" height="20" isRemoveLineWhenBlank="true" uuid="fca06d69-7fb1-4305-82b4-5d382d4d676e"/>
+				<textFieldExpression><![CDATA[$F{stocktype1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

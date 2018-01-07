@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="appointmentsreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" isIgnorePagination="true" uuid="d9c37ba8-71bc-4215-942f-7275a443b417">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="AppoinmentId" class="java.lang.Integer"/>
+	<field name="DateOfAppointment" class="java.sql.Date"/>
+	<field name="DoctorAdvice" class="java.lang.Boolean"/>
+	<field name="Guestname" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="21" width="192" height="20" forecolor="#FF0000" uuid="b6104374-9ded-4f8a-9160-1df162f13bae"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appontments List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="18" width="100" height="20" forecolor="#0000FF" uuid="f84e1518-dd6c-4985-8dc8-30a6181203a5"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointment ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="18" width="102" height="20" forecolor="#0000FF" uuid="1a492c6d-4b4a-4dd2-83f1-b1d35ae05c72"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guest Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="18" width="117" height="20" forecolor="#0000FF" uuid="4b4ccdaa-1536-466f-b04d-d6de6f6e023d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointment Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="18" width="100" height="20" forecolor="#0000FF" uuid="fc338df7-d583-4728-b3ff-3693ef2ace83"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doctor Advice(T/F)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="11" width="100" height="18" uuid="76222c49-296f-44c7-9d9e-d7b8c6a760db"/>
+				<textFieldExpression><![CDATA[$F{AppoinmentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="11" width="117" height="18" uuid="9259b677-be96-48d9-8dee-eacad6645cf6"/>
+				<textFieldExpression><![CDATA[$F{DateOfAppointment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="11" width="102" height="18" uuid="cecdcee6-85fa-4673-b718-af74620b37e1"/>
+				<textFieldExpression><![CDATA[$F{Guestname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="11" width="100" height="18" uuid="ed3ddd4c-b857-4c9d-8855-5b3b4167ca81"/>
+				<textFieldExpression><![CDATA[$F{DoctorAdvice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="429" y="0" width="100" height="20" uuid="31284d52-d9b0-4df0-a2f0-b1b1739ee667"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="183" y="0" width="100" height="20" uuid="38d64687-4310-4df8-877b-487f4e797303"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch"/>
+	</summary>
+</jasperReport>

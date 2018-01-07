@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="guestDOBReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6b40cd3b-8f52-4bae-a028-d842bb30ae94">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="guestid" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="dob" class="java.lang.Date"/>
+	<field name="mobile" class="java.lang.Number"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="lastvisitdate" class="java.lang.Date"/>
+	<field name="noofvisits" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="37" width="207" height="20" uuid="4b66b288-4f58-47c4-a448-a9e057c15ecd"/>
+				<textElement>
+					<font fontName="Arimo" size="14"/>
+				</textElement>
+				<text><![CDATA[Guest's Date Of Birth Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-15" y="79" width="558" height="1" uuid="d77ea921-8c13-4e88-a8fd-4d8273189e37"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="16" width="69" height="20" uuid="b46315fb-51e7-4959-9f80-e35acf673f60"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[Customer ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="16" width="100" height="20" uuid="e4e6c1a8-c184-4230-83bd-b50193e70788"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="16" width="100" height="20" uuid="47bf6f5a-2657-4c57-b4aa-52385ab24ee1"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[DOB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="16" width="100" height="20" uuid="6e0fba83-8ff2-4ab2-a385-a3ccf40ec748"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="16" width="100" height="20" uuid="badd5ac9-71d8-42db-a663-0418cab53a22"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="16" width="100" height="20" uuid="a8de66ab-a00a-4fba-84c8-183dfa1d0c41"/>
+				<textElement>
+					<font fontName="Arimo"/>
+				</textElement>
+				<text><![CDATA[Last Visist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="16" width="100" height="20" uuid="1af75a62-a881-4499-99af-757414cfae78"/>
+				<text><![CDATA[No.of Visits]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="10" width="100" height="20" uuid="952a8e4f-e3e2-4c7c-8162-7c5d7b6241b1"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="10" width="100" height="20" uuid="4277a687-f2ab-48a7-977c-efaf02710ab7"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="10" width="100" height="20" uuid="41408a97-5f7c-4f73-b5e5-9fa84f1e91eb"/>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="10" width="54" height="20" uuid="7768e530-fb38-488b-8541-8c1df9e61c8a"/>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="10" width="100" height="20" uuid="77485571-76d8-4f9d-a776-f2e4cde2113a"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="10" width="100" height="20" uuid="9f79690a-6e0c-47ab-8528-23f5f888de78"/>
+				<textFieldExpression><![CDATA[$F{lastvisitdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="10" width="100" height="20" uuid="3f81aaa0-f605-41f3-bce7-a40779366455"/>
+				<textFieldExpression><![CDATA[$F{noofvisits}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

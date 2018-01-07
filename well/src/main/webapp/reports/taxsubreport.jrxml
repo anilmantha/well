@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report3" pageWidth="400" pageHeight="842" columnWidth="360" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6c080984-3c30-445d-bf4e-86c3161ff492">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="pname" class="java.lang.String"/>
+	<field name="pqty" class="java.lang.String"/>
+	<field name="prate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="154" y="-1" width="24" height="20" uuid="919464eb-3066-4b0c-8f30-b5bf4c97f538"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pqty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="154" height="19" uuid="a87a8f70-2002-4b0f-98c3-56eb3bea634a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="140" height="20" uuid="0c0fc072-a587-4ddc-a060-298bef662243"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prate}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-10" y="-17" width="1" height="37" uuid="36b2bb1f-1f3d-4e5d-a6b8-c0d2cd7fcd43"/>
+			</line>
+			<line>
+				<reportElement x="348" y="-17" width="1" height="38" uuid="13695018-3bf9-4d01-adc2-af24f4c1f00d"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6">
+			<line>
+				<reportElement x="-10" y="1" width="358" height="1" uuid="a4a853a9-7b26-469c-b02d-a47a7de61c94"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>

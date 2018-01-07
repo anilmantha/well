@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExcelReview" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="5c20d523-c578-4c6c-b000-5618ac9dba6b">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="55"/>
+	<property name="ireport.y" value="287"/>
+	<field name="formid" class="java.lang.Integer"/>
+	<field name="formdescp" class="java.lang.String"/>
+	<field name="fromdate" class="java.lang.String"/>
+	<field name="todate" class="java.lang.String"/>
+	<field name="escore" class="java.lang.Integer"/>
+	<field name="vscore" class="java.lang.Integer"/>
+	<field name="gscore" class="java.lang.Integer"/>
+	<field name="fscore" class="java.lang.Integer"/>
+	<field name="pscore" class="java.lang.Integer"/>
+	<field name="vpscore" class="java.lang.Integer"/>
+	<field name="questiondesc" class="java.lang.String"/>
+	<field name="ecount" class="java.lang.Integer"/>
+	<field name="vcount" class="java.lang.Integer"/>
+	<field name="gcount" class="java.lang.Integer"/>
+	<field name="fcount" class="java.lang.Integer"/>
+	<field name="pcount" class="java.lang.Integer"/>
+	<field name="vpcount" class="java.lang.Integer"/>
+	<field name="total" class="java.lang.Integer"/>
+	<field name="esum" class="java.lang.Integer"/>
+	<field name="vsum" class="java.lang.Integer"/>
+	<field name="gsum" class="java.lang.Integer"/>
+	<field name="fsum" class="java.lang.Integer"/>
+	<field name="psum" class="java.lang.Integer"/>
+	<field name="vpsum" class="java.lang.Integer"/>
+	<field name="erese" class="java.lang.Integer"/>
+	<field name="vres" class="java.lang.Integer"/>
+	<field name="gres" class="java.lang.Integer"/>
+	<field name="fres" class="java.lang.Integer"/>
+	<field name="pres" class="java.lang.Integer"/>
+	<field name="vpres" class="java.lang.Integer"/>
+	<field name="totalres" class="java.lang.Integer"/>
+	<field name="totalfilledforms" class="java.lang.Integer"/>
+	<field name="attributes" class="java.lang.Integer"/>
+	<field name="totalattributes" class="java.lang.Integer"/>
+	<field name="totalscore" class="java.lang.Integer"/>
+	<field name="pertotal" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="16" width="300" height="20" uuid="69550fc1-5469-4048-8ab5-602da94428ef"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Feedback Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="15" width="182" height="20" uuid="9fc76292-f493-48a8-b9b2-cc86431f172c"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Form Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="35" width="182" height="20" uuid="947e9bfe-87da-4cb2-9236-e0f8a8541b95"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Form Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="55" width="182" height="20" uuid="16e2c39c-798c-4ca2-963e-ea870ddec73b"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Range]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="225" y="15" width="125" height="20" uuid="f126acfc-da48-4f7c-b5a2-4049d4d150f6"/>
+				<textFieldExpression><![CDATA[$F{formid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="35" width="125" height="20" uuid="64705a25-9e2e-4441-b2a9-917db4c1bc67"/>
+				<textFieldExpression><![CDATA[$F{formdescp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="55" width="117" height="20" uuid="8af12d76-a894-425d-bc18-068aac2abdab"/>
+				<textFieldExpression><![CDATA[$F{fromdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="55" width="128" height="20" uuid="51476ad2-1786-4af6-8b07-515640ca7823"/>
+				<textFieldExpression><![CDATA[$F{todate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="14" width="126" height="20" uuid="5ab1c84d-0faa-46ad-b297-6dd722f149a8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Score Values]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="34" width="126" height="20" uuid="fba178b1-f38f-4d20-b0a5-8a25df37e4f4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Question Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="34" width="56" height="20" uuid="ce00f8ef-575f-47e7-960e-c81d5d71455a"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Excellent]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="34" width="62" height="20" uuid="4c5d99a1-04e6-4ca9-8c07-c6664164f8d0"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[ Very Good]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="34" width="55" height="20" uuid="be6e0cda-096e-4cfb-b51c-3d662c3e6cf3"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Good]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="34" width="46" height="20" uuid="ecb54530-acb4-4d17-ab18-0adf5282e8c1"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fare]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="34" width="57" height="20" uuid="88b80595-8ea3-4b18-96d5-b58bb73c9c44"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Poor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="34" width="58" height="20" uuid="34764b26-6354-4efa-a0a7-5264ff22dc12"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Very Poor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="34" width="51" height="20" uuid="8e5e952e-77ef-4921-b65d-e6e331f7ab8a"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="169" y="14" width="56" height="20" uuid="d5d09ced-9bfb-4f07-93e7-61b39b6b4c66"/>
+				<textFieldExpression><![CDATA[$F{escore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="14" width="55" height="20" uuid="2b34723e-9d63-4eea-9f2b-5876bb1348b2"/>
+				<textFieldExpression><![CDATA[$F{gscore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="14" width="46" height="20" uuid="943a7336-131b-4e4f-8fa8-332dff071c5e"/>
+				<textFieldExpression><![CDATA[$F{fscore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="14" width="57" height="20" uuid="62c02280-3d7b-44de-af12-b6e26c3342e7"/>
+				<textFieldExpression><![CDATA[$F{pscore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="14" width="58" height="20" uuid="887dd846-df0c-4d4d-a507-279b56c0a1e3"/>
+				<textFieldExpression><![CDATA[$F{vpscore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="14" width="62" height="20" uuid="32df517b-e97b-4e81-94a2-1d976da505c3"/>
+				<textFieldExpression><![CDATA[$F{vscore}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="43" y="17" width="126" height="20" isRemoveLineWhenBlank="true" uuid="87adabb3-1460-4cf6-ae08-ba36dcd0e3ec"/>
+				<textFieldExpression><![CDATA[$F{questiondesc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="225" y="17" width="62" height="20" isRemoveLineWhenBlank="true" uuid="f87b18e0-d950-4af1-941a-a70b698dd576"/>
+				<textFieldExpression><![CDATA[$F{vcount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="17" width="55" height="20" isRemoveLineWhenBlank="true" uuid="7004637f-d6c2-4286-89bc-e345f95d1501"/>
+				<textFieldExpression><![CDATA[$F{gcount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="342" y="17" width="46" height="20" isRemoveLineWhenBlank="true" uuid="dc44a43e-dbac-47ad-bbde-856ca6394ef1"/>
+				<textFieldExpression><![CDATA[$F{fcount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="388" y="17" width="57" height="20" isRemoveLineWhenBlank="true" uuid="18cc266a-6bd9-467a-b631-6b415afe1716"/>
+				<textFieldExpression><![CDATA[$F{pcount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="445" y="17" width="58" height="20" isRemoveLineWhenBlank="true" uuid="d242aabe-53df-46d7-8343-4d2baf9f7a3d"/>
+				<textFieldExpression><![CDATA[$F{vpcount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="503" y="17" width="51" height="20" isRemoveLineWhenBlank="true" uuid="2a852905-0beb-4c2e-b071-371d14fe7cf8"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="169" y="17" width="56" height="20" isRemoveLineWhenBlank="true" uuid="27de8692-ea69-4816-8835-aacaf4716cf3"/>
+				<textFieldExpression><![CDATA[$F{ecount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="169" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="6" width="126" height="20" uuid="9f02dbca-50b1-4fce-8e16-1b3bf325a02e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total values]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="26" width="126" height="20" uuid="47a5dda8-e595-4e8c-98ce-e1a5e7960f05"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Scores]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="57" width="161" height="20" uuid="60ca1fcb-9547-4f7d-bbd4-6d8d5e636048"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Survey Forms Filled
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="77" width="161" height="20" uuid="7c673d6a-7b9c-4283-8586-66aac2f6d1f3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Attributes per Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="97" width="161" height="20" uuid="15ca8ae8-e9d5-47ec-9128-644f3f3a087f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Attributes
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="117" width="161" height="20" uuid="6aec674d-e255-4e60-8581-d0c752862720"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Maximum Scored]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="137" width="161" height="20" uuid="ce357a37-f6fa-46b3-bfc0-74f24765a753"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Performance Index in(%)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="169" y="6" width="56" height="20" uuid="d6c9a3f5-03fb-45c9-a72c-2d022b3a0045"/>
+				<textFieldExpression><![CDATA[$F{esum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="6" width="62" height="20" uuid="ae17dd07-21e8-4d8b-ab4a-2f49afe46e53"/>
+				<textFieldExpression><![CDATA[$F{vsum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="6" width="55" height="20" uuid="3268a67d-b474-494c-b7bb-a4baf670652e"/>
+				<textFieldExpression><![CDATA[$F{gsum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="6" width="46" height="20" uuid="17dec7ee-7f44-48a3-9d23-6f1b798cfb9b"/>
+				<textFieldExpression><![CDATA[$F{fsum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="6" width="57" height="20" uuid="db0e79dd-e681-4001-8312-b2a7528b6bff"/>
+				<textFieldExpression><![CDATA[$F{psum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="6" width="58" height="20" uuid="ee4ee532-0a88-4765-b269-ddaa59e950aa"/>
+				<textFieldExpression><![CDATA[$F{vpsum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="26" width="56" height="20" uuid="747f6049-f03b-494e-b020-544edd52b84c"/>
+				<textFieldExpression><![CDATA[$F{erese}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="26" width="62" height="20" uuid="33f89338-74f4-40bc-9d60-57615b39b311"/>
+				<textFieldExpression><![CDATA[$F{vres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="26" width="55" height="20" uuid="08b60335-3962-41d3-8271-29625066f09a"/>
+				<textFieldExpression><![CDATA[$F{gres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="26" width="46" height="20" uuid="2fefb48a-572b-47d2-9859-88d7509ab027"/>
+				<textFieldExpression><![CDATA[$F{fres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="26" width="57" height="20" uuid="b5240a53-8aa9-4487-b3c9-c950a8faa6e5"/>
+				<textFieldExpression><![CDATA[$F{pres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="26" width="58" height="20" uuid="58848c4f-be77-487c-a31a-569f86d75fe5"/>
+				<textFieldExpression><![CDATA[$F{vpres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="503" y="26" width="52" height="20" uuid="26d07e54-a16a-47fd-be7c-6c3d9e92703a"/>
+				<textFieldExpression><![CDATA[$F{totalres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="57" width="115" height="20" uuid="f84b0712-d84f-4864-bfb4-d6cfa5e98057"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{totalfilledforms}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="77" width="115" height="20" uuid="037cbdd1-7d5a-450d-920a-f631fa752740"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{attributes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="97" width="115" height="20" uuid="5ad38248-16bc-4ea7-9319-dc58ecd28005"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{totalattributes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="117" width="115" height="20" uuid="edae40dd-ddc9-4ea2-92fd-1b5048e7790a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{totalscore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="137" width="115" height="20" uuid="c7c5408b-dd35-4234-9874-b16819cde61a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{pertotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="445" y="137" width="58" height="20" uuid="841780a6-6cf8-4314-a353-f50e103688d8"/>
+				<text><![CDATA[%]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="28" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

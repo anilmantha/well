@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TicketReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7222ca72-dcc3-434d-a1ce-79dfc2d18299">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="fromdate" class="java.lang.String"/>
+	<field name="todate" class="java.lang.String"/>
+	<field name="tcktid" class="java.lang.Integer"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="Complaints" class="java.lang.String"/>
+	<field name="Department" class="java.lang.String"/>
+	<field name="assigned" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="tckttype" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="206" y="10" width="156" height="20" isPrintInFirstWholeBand="true" uuid="ef5a91c6-320b-4667-b171-7811bde18ce0"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineStyle="Dotted"/>
+					<rightPen lineStyle="Dotted"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="14" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Tickets Review Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="40" width="555" height="1" uuid="f62b80b5-9600-45e7-a831-0110a926a1b6"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="20" uuid="05b30407-bc7a-49ef-990e-9c07d6f4b5cc"/>
+				<text><![CDATA[Date Range]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="106" y="0" width="100" height="20" uuid="15fe3bb4-a15e-4686-bd14-6599980ea08a"/>
+				<textFieldExpression><![CDATA[$F{fromdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="206" y="0" width="100" height="20" uuid="7e551067-9f3a-40e1-a604-1069ef14dd2b"/>
+				<textFieldExpression><![CDATA[$F{todate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="57" height="20" uuid="14b56203-3077-4786-a907-6dd4c3d240c7"/>
+				<text><![CDATA[Ticket No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="0" width="68" height="20" uuid="68167806-4cba-47c4-8afc-0e71887b5bd3"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="0" width="163" height="20" uuid="f2337984-db3a-489b-acaa-fedaf48c9e0c"/>
+				<text><![CDATA[Complaints]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="74" height="20" uuid="6d6f272e-88ed-4b5f-ae1d-737fe3b6f94e"/>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="0" width="65" height="20" uuid="e464b77d-5b15-4370-896f-c64d5e88e130"/>
+				<text><![CDATA[Assigned To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="45" height="20" uuid="dfae4961-747e-4423-a2cb-1a676c84d39b"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="83" height="20" uuid="f8aac32f-886a-499e-83ea-b93aa33a8756"/>
+				<text><![CDATA[Ticket Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="10" width="57" height="20" isRemoveLineWhenBlank="true" uuid="a99af14a-f84c-4814-b392-9f39ca6f5946"/>
+				<textFieldExpression><![CDATA[$F{tcktid}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="10" width="68" height="20" isRemoveLineWhenBlank="true" uuid="29227afc-f724-4360-933c-2bf2d8bf9e34"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="10" width="163" height="20" isRemoveLineWhenBlank="true" uuid="f3638b36-a4cb-4d06-9564-06ac0c4e1155"/>
+				<textFieldExpression><![CDATA[$F{Complaints}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="288" y="10" width="74" height="20" isRemoveLineWhenBlank="true" uuid="984367dc-26b6-4ac1-8391-3e016a260657"/>
+				<textFieldExpression><![CDATA[$F{Department}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="362" y="10" width="65" height="20" isRemoveLineWhenBlank="true" uuid="543c2082-75eb-4ffd-8179-2a5ffdf34176"/>
+				<textFieldExpression><![CDATA[$F{assigned}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="427" y="10" width="45" height="20" isRemoveLineWhenBlank="true" uuid="98eda9d6-7b3a-47a8-bf80-1293ddab1cb5"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="472" y="10" width="83" height="20" isRemoveLineWhenBlank="true" uuid="1fd1f9f1-0a1b-4dbd-81f0-ff0a8e6e2469"/>
+				<textFieldExpression><![CDATA[$F{tckttype}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
